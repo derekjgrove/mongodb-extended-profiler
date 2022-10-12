@@ -24,7 +24,7 @@ class Inflator extends React.Component {
         }
 
         return (
-            <Box sx={{}}>
+            <Box sx={{overflow: 'auto', height:'calc(100vh - 64px)', padding: '32px 16px'}}>
                 { content }
             </Box>
         )

@@ -36,7 +36,7 @@ class Container extends BaseContainer {
 
         
         return (
-            <Box sx={{overflow: 'none', height:'100vh'}}>
+            <Box sx={{overflow: 'none', height:'calc(100vh - 64px)'}}>
                             
                 <AppBar position="fixed"  sx={{ maxHeight: '64px', overflow: 'hidden', whiteSpace: 'nowrap', zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: (theme) => theme.palette.secondary.contrastText}}>
                     <Toolbar>
@@ -74,7 +74,7 @@ class Container extends BaseContainer {
                     </SideNavGroup>
                 </SideNav>
 
-                <Box sx={{marginLeft: '184px', overflow: 'auto', marginTop: '64px'}}>
+                <Box sx={{marginLeft: '184px', marginTop: '64px', height:'calc(100vh - 64px)'}}>
                     { <Inflator currentTab={currentTab} theme={theme} /> }
                 </Box>
                 
